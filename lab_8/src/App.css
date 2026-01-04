@@ -1,0 +1,15 @@
+body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f8fafc; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+.header { display: flex; justify-content: space-between; padding: 20px 50px; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+
+.hero { text-align: center; padding: 60px 20px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200'); background-size: cover; color: white; border-radius: 20px; margin-bottom: 40px; }
+.cta-button { padding: 12px 30px; background: #6366f1; color: white; border: none; border-radius: 8px; cursor: pointer; }
+
+.car-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+.car-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.car-image-container img { width: 100%; height: 200px; object-fit: cover; }
+.car-info { padding: 20px; }
+
+.footer { text-align: center; padding: 40px; background: #1e293b; color: white; margin-top: 50px; }
