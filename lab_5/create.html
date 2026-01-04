@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Управління авто</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1 id="pageTitle">Додати новий автомобіль</h1>
+        </header>
+
+        <form id="carForm" class="controls-form">
+            <input type="text" id="brand" placeholder="Марка" required minlength="2">
+            <input type="number" id="power" placeholder="Потужність (к.с.)" required min="1">
+            <input type="number" id="maxSpeed" placeholder="Макс. швидкість (км/год)" required min="1">
+            <input type="url" id="image" placeholder="URL картинки (unsplash)">
+            
+            <div class="action-buttons">
+                <button type="submit" class="btn btn--primary">Зберегти</button>
+                <a href="index.html" class="btn btn--secondary">Скасувати</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button onclick="closeModal()" class="btn btn--primary">Зрозуміло</button>
+        </div>
+    </div>
+    <script src="create.js"></script> 
+</body>
+</html>

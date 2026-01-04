@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 Premium Car Fleet</h1>
+            <div class="action-buttons">
+                <a href="create.html" class="btn btn--primary">➕ Додати авто</a>
+                <button id="sortBtn" class="btn btn--secondary">⚡ Сортувати швидкість</button>
+                <button id="countBtn" class="btn btn--accent">📊 Потужність</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Шукати марку (напр. Tesla)...">
+            </div>
+            <div id="totalResult" class="total-badge"></div>
+        </header>
+
+        <div id="carList" class="car-grid">
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

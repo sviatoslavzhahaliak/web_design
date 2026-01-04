@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Редагувати авто</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✏️ Редагування автомобіля</h1>
+        </header>
+
+        <form id="editForm" class="controls-form">
+            <input type="text" id="brand" placeholder="Марка" required>
+            <input type="number" id="power" placeholder="Потужність" required>
+            <input type="number" id="maxSpeed" placeholder="Швидкість" required>
+            <input type="url" id="image" placeholder="URL фото">
+            
+            <div class="action-buttons">
+                <button type="submit" class="btn btn--primary">Зберегти</button>
+                <a href="index.html" class="btn btn--secondary">Назад</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+            <button onclick="closeModal()" class="btn btn--primary">Повернутись на головну</button>
+        </div>
+    </div>
+
+    <script src="edit.js"></script>
+</body>
+</html>
